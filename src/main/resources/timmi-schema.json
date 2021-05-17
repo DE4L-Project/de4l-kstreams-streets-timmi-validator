@@ -1,0 +1,295 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://de4l.io/json/timmi/schema.json",
+  "type": "object",
+  "properties": {
+    "geoPoint": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    },
+    "detectedActivity": {
+      "type": "object"
+    },
+    "coords": {
+      "type": "object",
+      "properties": {
+        "altitude": {
+          "type": "number"
+        },
+        "bearing": {
+          "type": "number"
+        },
+        "speed": {
+          "type": "number"
+        },
+        "speedAccuracyMetersPerSecond": {
+          "type": "integer"
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    },
+    "deviceInfo": {
+      "type": "object",
+      "properties": {
+        "android_id": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "device": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "android_id"
+      ]
+    },
+    "appInfo": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "versionCode": {
+          "type": "integer"
+        },
+        "packageName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "versionCode",
+        "packageName"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "string"
+    },
+    "acceleration": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "integer"
+            },
+            "maximumRange": {
+              "type": "number"
+            },
+            "power": {
+              "type": "number"
+            },
+            "resolution": {
+              "type": "number"
+            },
+            "version": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "highestDirectReportRateLevel": {
+              "type": "integer"
+            }
+          }
+        },
+        "firstSensorTimestampNanos": {
+          "type": "integer"
+        },
+        "firstTimestamp": {
+          "type": "string"
+        },
+        "lastSensorTimestampNanos": {
+          "type": "integer"
+        },
+        "lastTimestamp": {
+          "type": "string"
+        },
+        "numberOfAggregatedValues": {
+          "type": "integer"
+        },
+        "xAxis": {
+          "type": "object",
+          "properties": {
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "average": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "minimum",
+            "maximum",
+            "average"
+          ]
+        },
+        "yAxis": {
+          "type": "object",
+          "properties": {
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "average": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "minimum",
+            "maximum",
+            "average"
+          ]
+        },
+        "zAxis": {
+          "type": "object",
+          "properties": {
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "average": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "minimum",
+            "maximum",
+            "average"
+          ]
+        }
+      },
+      "required": [
+        "vendor",
+        "name",
+        "additionalProperties",
+        "firstSensorTimestampNanos",
+        "firstTimestamp",
+        "lastSensorTimestampNanos",
+        "lastTimestamp",
+        "numberOfAggregatedValues",
+        "xAxis",
+        "yAxis",
+        "zAxis"
+      ]
+    },
+    "light": {
+      "type": "object",
+      "properties": {
+        "vendor": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "integer"
+            },
+            "maximumRange": {
+              "type": "integer"
+            },
+            "power": {
+              "type": "number"
+            },
+            "resolution": {
+              "type": "integer"
+            },
+            "version": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "highestDirectReportRateLevel": {
+              "type": "integer"
+            }
+          }
+        },
+        "firstSensorTimestampNanos": {
+          "type": "integer"
+        },
+        "firstTimestamp": {
+          "type": "string"
+        },
+        "lastSensorTimestampNanos": {
+          "type": "integer"
+        },
+        "lastTimestamp": {
+          "type": "string"
+        },
+        "numberOfAggregatedValues": {
+          "type": "integer"
+        },
+        "lux": {
+          "type": "object",
+          "properties": {
+            "minimum": {
+              "type": "integer"
+            },
+            "maximum": {
+              "type": "integer"
+            },
+            "average": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "geoPoint",
+    "detectedActivity",
+    "coords",
+    "deviceInfo",
+    "appInfo",
+    "timestamp",
+    "schemaVersion",
+    "acceleration"
+  ]
+}

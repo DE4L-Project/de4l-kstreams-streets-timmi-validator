@@ -1,0 +1,84 @@
+{
+  "geoPoint": {
+    "lat": 44.32100,
+    "lon": 10.3214412
+  },
+  "detectedActivity": {},
+  "coords": {
+    "altitude": 45.27383573732604,
+    "bearing": 86.34574890136719,
+    "speed": 0.9978873133659363,
+    "speedAccuracyMetersPerSecond": 0,
+    "lat": 44.32100,
+    "lon": 10.3214412
+  },
+  "deviceInfo": {
+    "android_id": "something",
+    "manufacturer": "something",
+    "model": "something",
+    "device": "something"
+  },
+  "appInfo": {
+    "version": "0.1.2",
+    "versionCode": 5,
+    "packageName": "io.timmi.de4lroadtracker"
+  },
+  "timestamp": "2021-04-21T12:01:55.000Z",
+  "schemaVersion": "2.1.2",
+  "acceleration": {
+    "vendor": "AOSP",
+    "name": "Linear Acceleration Sensor",
+    "additionalProperties": {
+      "type": 10,
+      "maximumRange": 19.613300323486328,
+      "power": 0.003000000026077032,
+      "resolution": 0.0012000000569969416,
+      "version": 3,
+      "id": 0,
+      "highestDirectReportRateLevel": 0
+    },
+    "firstSensorTimestampNanos": 10640705023628,
+    "firstTimestamp": "2021-04-21T12:01:29.794+01:00",
+    "lastSensorTimestampNanos": 10665874936937,
+    "lastTimestamp": "2021-04-21T12:01:54.963+01:00",
+    "numberOfAggregatedValues": 4,
+    "xAxis": {
+      "minimum": -0.13095647,
+      "maximum": 0.17918074,
+      "average": 0.00021592688
+    },
+    "yAxis": {
+      "minimum": -0.22532037,
+      "maximum": 0.1174342,
+      "average": -0.029786961
+    },
+    "zAxis": {
+      "minimum": -0.6220717,
+      "maximum": 0.593852,
+      "average": -0.011989076
+    }
+  },
+  "light": {
+    "vendor": "MTK",
+    "name": "LIGHT",
+    "additionalProperties": {
+      "type": 5,
+      "maximumRange": 65535,
+      "power": 0.0010000000474974513,
+      "resolution": 1,
+      "version": 1,
+      "id": 0,
+      "highestDirectReportRateLevel": 0
+    },
+    "firstSensorTimestampNanos": 10641078527474,
+    "firstTimestamp": "2021-04-21T12:01:30.167+01:00",
+    "lastSensorTimestampNanos": 10665877861091,
+    "lastTimestamp": "2021-04-21T12:01:54.966+01:00",
+    "numberOfAggregatedValues": 1,
+    "lux": {
+      "minimum": 273,
+      "maximum": 340,
+      "average": 312.41803
+    }
+  }
+}

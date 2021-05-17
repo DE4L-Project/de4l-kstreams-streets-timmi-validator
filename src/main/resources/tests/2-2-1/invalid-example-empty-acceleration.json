@@ -1,0 +1,53 @@
+{
+  "geoPoint": {
+    "lat": 44.32100,
+    "lon": 10.3214412
+  },
+  "detectedActivity": {},
+  "coords": {
+    "altitude": 45.27383573732604,
+    "bearing": 86.34574890136719,
+    "speed": 0.9978873133659363,
+    "speedAccuracyMetersPerSecond": 0,
+    "lat": 44.32100,
+    "lon": 10.3214412
+  },
+  "deviceInfo": {
+    "android_id": "something",
+    "manufacturer": "something",
+    "model": "something",
+    "device": "something"
+  },
+  "appInfo": {
+    "version": "0.1.2",
+    "versionCode": 5,
+    "packageName": "io.timmi.de4lroadtracker"
+  },
+  "timestamp": "2021-04-21T12:01:55.000Z",
+  "schemaVersion": "2.1.2",
+  "acceleration": {
+  },
+  "light": {
+    "vendor": "MTK",
+    "name": "LIGHT",
+    "additionalProperties": {
+      "type": 5,
+      "maximumRange": 65535,
+      "power": 0.0010000000474974513,
+      "resolution": 1,
+      "version": 1,
+      "id": 0,
+      "highestDirectReportRateLevel": 0
+    },
+    "firstSensorTimestampNanos": 10641078527474,
+    "firstTimestamp": "2021-04-21T12:01:30.167+01:00",
+    "lastSensorTimestampNanos": 10665877861091,
+    "lastTimestamp": "2021-04-21T12:01:54.966+01:00",
+    "numberOfAggregatedValues": 1,
+    "lux": {
+      "minimum": 273,
+      "maximum": 340,
+      "average": 312.41803
+    }
+  }
+}

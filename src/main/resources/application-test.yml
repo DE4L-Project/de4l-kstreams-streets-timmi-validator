@@ -1,0 +1,20 @@
+spring.application.name: kstreams-timmi-validator-test
+spring.kafka.bootstrapServers: de4l-kafka-broker-01-1.rancher.internal:9092,de4l-kafka-broker-02-1.rancher.internal:9092,de4l-kafka-broker-03-1.rancher.internal:9092
+spring.jackson.serialization.write_dates_as_timestamps: false
+spring:
+  cloud:
+    stream:
+      bindings:
+        process-in-0:
+          destination: de4l.timmi.json.v1
+        process-out-0:
+          destination: de4l.dev.timmi.validator.acceleration
+        process-out-1:
+          destination: de4l.dev.timmi.validator.development
+      kafka:
+        binder:
+            applicationId: kstreams-timmi-validator-test
+            deserializationExceptionHandler: logandcontinue
+            configuration:
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+spring.cloud.stream.function.definition: process

@@ -1,0 +1,12 @@
+spring.application.name: kstreams-timmi-validator
+spring.jackson.serialization.write_dates_as_timestamps: false
+spring:
+  cloud:
+    stream:
+      kafka:
+        streams:
+          binder:
+            deserializationExceptionHandler: logandcontinue
+            configuration:
+              default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+spring.cloud.stream.function.definition: process
