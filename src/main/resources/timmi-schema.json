@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://de4l.io/json/timmi/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "https://de4l.io/json/timmi/schema-2-1-2.json",
   "type": "object",
   "properties": {
     "geoPoint": {
@@ -34,7 +34,7 @@
           "type": "number"
         },
         "speedAccuracyMetersPerSecond": {
-          "type": "integer"
+          "type": "number"
         },
         "lat": {
           "type": "number"
@@ -75,7 +75,7 @@
           "type": "string"
         },
         "versionCode": {
-          "type": "integer"
+          "type": "number"
         },
         "packageName": {
           "type": "string"
@@ -106,7 +106,7 @@
           "type": "object",
           "properties": {
             "type": {
-              "type": "integer"
+              "type": "number"
             },
             "maximumRange": {
               "type": "number"
@@ -118,24 +118,24 @@
               "type": "number"
             },
             "version": {
-              "type": "integer"
+              "type": "number"
             },
             "id": {
-              "type": "integer"
+              "type": "number"
             },
             "highestDirectReportRateLevel": {
-              "type": "integer"
+              "type": "number"
             }
           }
         },
         "firstSensorTimestampNanos": {
-          "type": "integer"
+          "type": "number"
         },
         "firstTimestamp": {
           "type": "string"
         },
         "lastSensorTimestampNanos": {
-          "type": "integer"
+          "type": "number"
         },
         "lastTimestamp": {
           "type": "string"
@@ -228,51 +228,51 @@
           "type": "object",
           "properties": {
             "type": {
-              "type": "integer"
+              "type": "number"
             },
             "maximumRange": {
-              "type": "integer"
+              "type": "number"
             },
             "power": {
               "type": "number"
             },
             "resolution": {
-              "type": "integer"
+              "type": "number"
             },
             "version": {
-              "type": "integer"
+              "type": "number"
             },
             "id": {
-              "type": "integer"
+              "type": "number"
             },
             "highestDirectReportRateLevel": {
-              "type": "integer"
+              "type": "number"
             }
           }
         },
         "firstSensorTimestampNanos": {
-          "type": "integer"
+          "type": "number"
         },
         "firstTimestamp": {
           "type": "string"
         },
         "lastSensorTimestampNanos": {
-          "type": "integer"
+          "type": "number"
         },
         "lastTimestamp": {
           "type": "string"
         },
         "numberOfAggregatedValues": {
-          "type": "integer"
+          "type": "number"
         },
         "lux": {
           "type": "object",
           "properties": {
             "minimum": {
-              "type": "integer"
+              "type": "number"
             },
             "maximum": {
-              "type": "integer"
+              "type": "number"
             },
             "average": {
               "type": "number"
@@ -284,7 +284,6 @@
   },
   "required": [
     "geoPoint",
-    "detectedActivity",
     "coords",
     "deviceInfo",
     "appInfo",

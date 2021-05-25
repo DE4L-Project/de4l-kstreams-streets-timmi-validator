@@ -62,7 +62,6 @@ public class KStreamProcessor {
     public boolean isCompliant(String json) {
         try {
             var jsonNode = objectMapper.readTree(json);
-
             return schema.validate(jsonNode).isSuccess();
         } catch (IOException | ProcessingException ioException) {
             ioException.printStackTrace();
